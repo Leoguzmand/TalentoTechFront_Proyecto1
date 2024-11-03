@@ -123,3 +123,35 @@ header a:hover {
     }
 
 }
+
+/* ESTILOS DE LAS CARDS CON FLEXBOX (PAQUETES) */
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title-paquetes {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    background-color: lightskyblue;
+    justify-content: center;
+    align-items: center;
+
+
+    h2 {
+        /*flex: 100vw;*/
+    }
+
+}
+
+.container-paquetes {
+    display: flex;
+    flex: repeat(2, minmax(20rem, 1fr));
+}
+
+.paquete {
+    display: flex;
+}
