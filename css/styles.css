@@ -150,8 +150,17 @@ header a:hover {
 .container-paquetes {
     display: flex;
     flex: repeat(2, minmax(20rem, 1fr));
+    /*padding: 0 10vh;*/
+    gap: 2rem;
 }
 
 .paquete {
     display: flex;
+    flex-direction: column;
+}
+
+.img-paquete {
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
