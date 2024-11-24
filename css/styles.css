@@ -3,18 +3,48 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 0;
-    margin: 0;
     background-color: whitesmoke;
+
+    /* PALETA DE COLORES */
+
+    /* Tacao */
+    --color8: #eab676;
+    /* Malibu */
+    --color9: #87cefa;
+    /* Coconut Cream */
+    --color01: #f7f3cf;
+    /* Skeptic */
+    --color2: #c2e4cb;
+    /* Turquesa */
+    --color3: #36cecc;
+    /* Java */
+    --color4: #27b1bf;
+    /* Blumine */
+    --color5: #176585;
+    /* Burnt Umber  */
+    --color6: #873e23;
+    /* Eternity */
+    --color7: #21130d;
+    /* White Smoke */
+    --color10: rgb(245, 245, 245);
+    /* Denim */
+    --color11: rgb(12, 110, 190);
+    /* Dodger Blue */
+    --color12: rgb(30, 144, 255);
+
 }
 
 /* ESTILOS DE ENCABEZADO */
+
 header {
-    background-color: rgb(12, 110, 190);
+
+    background-color: var(--color11);
     width: 100%;
     min-height: 6rem;
     display: flex;
@@ -34,12 +64,13 @@ header {
 }
 
 .brand {
-    background-color: aquamarine;
+    background-color: var(--color01);
     color: #499db7;
     padding: 5px;
     margin: 0;
     min-width: 10rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 
@@ -51,13 +82,19 @@ header {
         align-items: center;
     }
 
+    a {
+        height: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
     .x-brand {
         color: #111;
     }
 }
 
 .menu {
-    background-color: pink;
+    background-color: var(--color2);
     margin: 5px;
     padding: 15px 5px;
     height: 50%;
@@ -86,8 +123,18 @@ header a {
 }
 
 header a:hover {
-    color: dodgerblue;
-    font-weight: bold;
+    color: var(--color12);
+    /*font-weight: bold;*/
+}
+
+.current {
+    border-bottom: 1px solid navy;
+    padding-bottom: 0.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.current:hover {
+    border-bottom: 1px solid var(--color12);
 }
 
 /* ESTILOS DE LA PORTADA */
@@ -115,6 +162,7 @@ header a:hover {
     gap: 0.5rem;
     padding: 0.5rem 2rem;
     color: darkslategrey;
+    border-radius: 1rem;
 
 
     h1 {
@@ -141,26 +189,92 @@ header a:hover {
     align-items: center;
 
 
-    h2 {
-        /*flex: 100vw;*/
-    }
 
 }
 
-.container-paquetes {
+.container-paquetes-grid {
     display: flex;
-    flex: repeat(2, minmax(20rem, 1fr));
-    /*padding: 0 10vh;*/
+    flex-wrap: wrap;
+    /*flex: repeat(2, minmax(20rem, 1fr));*/
+    justify-content: space-evenly;
+    margin: 2px 2%;
+    padding: 2px 5%;
     gap: 2rem;
+    border: 2px solid red;
+    flex-grow: 2;
 }
 
-.paquete {
+.paquetes-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 42%;
+    min-width: 200px;
+    border: 2px solid var(--color7);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .img-paquete {
     width: 100%;
     cursor: pointer;
     transition: all .5s ease-in-out;
+}
+
+/* ESTILOS DE LAS RESEÑAS */
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color01);
+}
+
+.reviews-container h2 {
+    color: var(--color11);
+    background-color: var(--color7);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.reviews-frame {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1%;
+    padding: 1rem 1%;
+    gap: 1rem;
+    border-radius: 8px;
+    background-color: var(--color9);
+}
+
+.review-card {
+    background-color: rgba(245, 245, 245, 0.5);
+    border: 2px solid var(--color8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 1rem;
+    /*max-width: 1200px;
+    width: 100%;*/
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: var(--color7);
+}
+
+.comment {
+    font-style: italic;
+    color: var(--color5);
+    font-size: 0.8rem;
+
 }
