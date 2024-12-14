@@ -13,24 +13,24 @@ body {
 
     /* PALETA DE COLORES */
 
-    /* Tacao */
-    --color8: #eab676;
-    /* Malibu */
-    --color9: #87cefa;
     /* Coconut Cream */
-    --color01: #f7f3cf;
+    --color01: rgb(247, 243, 207);
     /* Skeptic */
-    --color2: #c2e4cb;
+    --color2: rgb(194, 228, 203);
     /* Turquesa */
-    --color3: #36cecc;
+    --color3: rgb(54, 206, 204);
     /* Java */
-    --color4: #27b1bf;
+    --color4: rgb(39, 177, 191);
     /* Blumine */
-    --color5: #176585;
+    --color5: rgb(23, 101, 133);
     /* Burnt Umber  */
-    --color6: #873e23;
+    --color6: rgb(135, 62, 35);
     /* Eternity */
-    --color7: #21130d;
+    --color7: rgb(33, 19, 13);
+    /* Tacao */
+    --color8: rgb(234, 182, 118);
+    /* Malibu */
+    --color9: rgb(135, 206, 250);
     /* White Smoke */
     --color10: rgb(245, 245, 245);
     /* Denim */
@@ -64,7 +64,7 @@ header {
 }
 
 .brand {
-    background-color: var(--color01);
+    background-color: var(--color10);
     color: #499db7;
     padding: 5px;
     margin: 0;
@@ -83,7 +83,8 @@ header {
     }
 
     a {
-        height: 1rem;
+        height: 3rem;
+        width: 3rem;
         margin: 0;
         padding: 0;
     }
@@ -277,4 +278,38 @@ header a:hover {
     color: var(--color5);
     font-size: 0.8rem;
 
+}
+
+/* BOTON ARRIBA / BUTTON UP (DESKTOP)*/
+
+.btn-up {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: var(--color5);
+    box-shadow: 6px 6px 16px rgba(23, 101, 133, 0.5);
+    color: var(--color10);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.6rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 2.5rem;
+    cursor: pointer;
+    transform: scale(0);
+    /* transition: all .5s ease-in-out; */
+    transition: transform 0.3s ease;
+}
+
+.btn-up:hover {
+    background-color: var(--color8);
+    color: var(--color01);
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: var(--color2);
 }
