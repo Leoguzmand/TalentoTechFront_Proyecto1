@@ -14,29 +14,29 @@ body {
     /* PALETA DE COLORES */
 
     /* Coconut Cream */
-    --color01: rgb(247, 243, 207);
+    --color1-crema: rgb(247, 243, 207);
     /* Skeptic */
-    --color2: rgb(194, 228, 203);
+    --color2-verdeclaro: rgb(194, 228, 203);
     /* Turquesa */
-    --color3: rgb(54, 206, 204);
+    --color3-turquesa: rgb(54, 206, 204);
     /* Java */
-    --color4: rgb(39, 177, 191);
+    --color4-verdejava: rgb(39, 177, 191);
     /* Blumine */
-    --color5: rgb(23, 101, 133);
+    --color5-aguamarine: rgb(23, 101, 133);
     /* Burnt Umber  */
-    --color6: rgb(135, 62, 35);
+    --color6-marronclaro: rgb(135, 62, 35);
     /* Eternity */
-    --color7: rgb(33, 19, 13);
+    --color7-marronoscuro: rgb(33, 19, 13);
     /* Tacao */
-    --color8: rgb(234, 182, 118);
-    /* Malibu */
-    --color9: rgb(135, 206, 250);
+    --color8-dorado: rgb(234, 182, 118);
     /* White Smoke */
-    --color10: rgb(245, 245, 245);
-    /* Denim */
-    --color11: rgb(12, 110, 190);
+    --color9-whitesmoke: rgb(245, 245, 245);
+    /* Malibu */
+    --color10-azulclaro: rgb(135, 206, 250);
     /* Dodger Blue */
-    --color12: rgb(30, 144, 255);
+    --color11-azul: rgb(30, 144, 255);
+    /* Denim */
+    --color12-azuloscuro: rgb(12, 110, 190);
 
 }
 
@@ -44,14 +44,14 @@ body {
 
 header {
 
-    background-color: var(--color11);
+    background-color: white;
     width: 100%;
-    min-height: 6rem;
+    min-height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-bottom: gray 3px solid;
+    border-bottom: var(--color10-azulclaro) 2px solid;
 
 }
 
@@ -64,9 +64,9 @@ header {
 }
 
 .brand {
-    background-color: var(--color10);
-    color: #499db7;
-    padding: 5px;
+    background-color: white;
+    color: var(--color4-verdejava);
+    padding: 0 5px;
     margin: 0;
     min-width: 10rem;
     display: flex;
@@ -83,10 +83,14 @@ header {
     }
 
     a {
-        height: 3rem;
-        width: 3rem;
+        height: 4rem;
+        width: 4rem;
         margin: 0;
         padding: 0;
+    }
+
+    p {
+        font-size: 1.5rem;
     }
 
     .x-brand {
@@ -95,7 +99,7 @@ header {
 }
 
 .menu {
-    background-color: var(--color2);
+    background-color: rgb(252, 252, 252);
     margin: 5px;
     padding: 15px 5px;
     height: 50%;
@@ -118,24 +122,24 @@ header li {
 header a {
     text-decoration: none;
     text-transform: uppercase;
-    color: navy;
+    color: var(--color12-azuloscuro);
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 
 header a:hover {
-    color: var(--color12);
+    color: var(--color4-verdejava);
     /*font-weight: bold;*/
 }
 
 .current {
-    border-bottom: 1px solid navy;
+    border-bottom: 1px solid var(--color12-azuloscuro);
     padding-bottom: 0.2rem;
     transition: all 0.5s ease-in-out;
 }
 
 .current:hover {
-    border-bottom: 1px solid var(--color12);
+    border-bottom: 1px solid var(--color4-verdejava);
 }
 
 /* ESTILOS DE LA PORTADA */
@@ -211,7 +215,7 @@ header a:hover {
     align-items: center;
     max-width: 42%;
     min-width: 200px;
-    border: 2px solid var(--color7);
+    border: 2px solid var(--color7-marronoscuro);
     border-radius: 10px;
     padding: 10px;
 }
@@ -229,12 +233,12 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color01);
+    background-color: var(--color1-crema);
 }
 
 .reviews-container h2 {
-    color: var(--color11);
-    background-color: var(--color7);
+    color: var(--color12-azuloscuro);
+    background-color: var(--color2-verdeclaro);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -249,12 +253,12 @@ header a:hover {
     padding: 1rem 1%;
     gap: 1rem;
     border-radius: 8px;
-    background-color: var(--color9);
+    background-color: var(--color10-azulclaro);
 }
 
 .review-card {
     background-color: rgba(245, 245, 245, 0.5);
-    border: 2px solid var(--color8);
+    border: 2px solid var(--color8-dorado);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0 1rem;
@@ -270,12 +274,12 @@ header a:hover {
 
 .reviewer {
     font-weight: bold;
-    color: var(--color7);
+    color: var(--color7-marronoscuro);
 }
 
 .comment {
     font-style: italic;
-    color: var(--color5);
+    color: var(--color5-aguamarine);
     font-size: 0.8rem;
 
 }
@@ -286,9 +290,9 @@ header a:hover {
     height: 3px;
     width: 3px;
     border-radius: 50%;
-    background-color: var(--color5);
+    background-color: var(--color5-aguamarine);
     box-shadow: 6px 6px 16px rgba(23, 101, 133, 0.5);
-    color: var(--color10);
+    color: var(--color9-whitesmoke);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -304,12 +308,12 @@ header a:hover {
 }
 
 .btn-up:hover {
-    background-color: var(--color8);
-    color: var(--color01);
+    background-color: var(--color8-dorado);
+    color: var(--color1-crema);
 }
 
 /* PIE DE PAGINA */
 
 footer {
-    background-color: var(--color2);
+    background-color: var(--color2-verdeclaro);
 }
