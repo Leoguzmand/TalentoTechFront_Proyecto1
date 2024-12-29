@@ -39,15 +39,19 @@
         </div>
     </header>
 
-    <!-- FORMULARIO DE CONTACTO -->
+    <!-- PÁGINA DE CONTACTO -->
 
     <section class="contacto-area">
         <div class="contacto-title">
             <h2>Contáctanos</h2>
         </div>
 
-        <ul class="contacto-container">
-            <div class="contacto-img"></div>
+        <div class="contacto-container">
+
+            <!-- PORTADA DE LA PÁGINA DE CONTACTO -->
+            <figure class="contacto-img"></figure>
+
+            <!-- INFORMACIÓN DE CONTACTO -->
             <aside class="contacto-info">
                 <h3>Información de Contacto:</h3>
                 <p>Si tienes alguna consulta, no dudes en contactarnos. Por favor completa el formulario y te
@@ -69,12 +73,17 @@
                     </li>
                     <li class="contacto-line">
                         <span class="btn__icon nopointer"><i class="bi bi-telephone"></i></span>
+                        <span class="txt-body txt-small txt-light">+54 9 11 8765 4321</span>
+                    </li>
+                    <li class="contacto-line">
                         <button data-action="btn_iniciarWA" class="btn_icon" aria-label="iniciar chat en Whatsapp">
                             <i class="bi bi-whatsapp bi-hover"></i>
                         </button>
                         <span class="txt-body txt-small txt-light">+54 9 11 1234 5678</span>
                     </li>
                 </ul>
+
+                <!-- MAPA DE UBICACIÓN -->
                 <div class="location">
                     <iframe frameborder="0" class="mapa-frame" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
@@ -84,8 +93,27 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
+
+                <!-- REDES SOCIALES -->
+                <div class="social">
+                    <p class="titulo txt-medium txt-light">Síguenos en nuestras redes sociales:</p>
+                    <div class="social-icons">
+                        <button data-action="btn_irFacebook" class="btn__icon" aria-label="Ir a nuestro Facebook"><i
+                                class="bi bi-facebook bi-hover"></i></button>
+                        <button data-action="btn_irInstagram" class="btn__icon" aria-label="Ir a nuestro Instagram"><i
+                                class="bi bi-instagram bi-hover"></i></button>
+                        <button data-action="btn_irYoutube" class="btn__icon"
+                            aria-label="Ir a nuestro canal de Youtube"><i class="bi bi-youtube bi-hover"></i></button>
+                    </div>
+                </div>
             </aside>
-            </div>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <main class="contacto-form">
+
+            </main>
+        </div>
+
     </section>
 
 </body>
